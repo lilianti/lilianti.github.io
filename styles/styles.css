@@ -18,6 +18,9 @@ p{
  text-align:center;
  color:#777777;
 }
+.center{
+ align-content: center;
+}
 
 #para1 {
   color: #F2BAC9;
