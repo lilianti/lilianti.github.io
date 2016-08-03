@@ -11,17 +11,16 @@ font-family:"Avant Garde", Geneva, sans-serif;
 h1 {
  color :#f3c01a;
  transition: all 1s;
-
 }
 
 h1:hover {
-  font-size: 40px;
+ font-size: 40px;
 }
 
 h2 {
-  color :#2fb9b9;
-  font-family:"Edwardian Script ITC";
-  font-size:50px;
+ color :#2fb9b9;
+ font-family:"Edwardian Script ITC";
+ font-size:50px;
 }
 
 p{
@@ -30,45 +29,42 @@ p{
 }
 
 .center{
-  text-align:center;
-  float:center;
+ text-align:center;
+ float:center;
 }
 
-   .divTable
-    {
-        display:  table;
-        width:auto;
-    }
+.divTable
+{
+  display:  table;
+  width:auto;
+}
 
-    .divRow
-    {
-       display:table-row;
-       width:auto;
-    }
+.divRow
+{
+ display:table-row;
+ width:auto;
+}
 
-    .divCell
-    {
-        float:left;
-        display:table-column;
-    }
-<
+.divCell
+{
+ float:left;
+ display:table-column;
+}
+
 #para1 {
-  color: #F2BAC9;
+color: #F2BAC9;
 }
-#logo_kucing {
-  width:150px;
-   transition: all 1s;
 
+#logo_kucing {
+ width:150px;
+ transition: all 1s;
 }
 
 #logo_kucing:hover {
-  transform: rotate(-360deg);
-}
-
-#welcome {
+ transform: rotate(-360deg);
 }
 
 #form-message {
-   width: 50%;
-   margin: auto;
+ width: 50%;
+ margin: auto;
 }
