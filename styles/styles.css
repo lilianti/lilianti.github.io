@@ -9,6 +9,9 @@ body {
 h1 {
  color :#f3c01a;
 }
+h1:hover {
+  font-size: 40px;
+}
 
 h2 {
  color :#2fb9b9;
