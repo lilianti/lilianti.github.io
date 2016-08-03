@@ -21,5 +21,10 @@ p{
   color: #F2BAC9;
 }
 #logo_kucing {
- width:200px;
+ width:150px;
+ padding 30px 30px;
+}
+
+#welcome {
+ align: center; 
 }
