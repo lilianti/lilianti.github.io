@@ -1,0 +1,16 @@
+p {
+  color: orange;
+}
+
+img {
+  width: 100px;
+}
+#logo {
+  background-color: white;
+}
+.gambar {
+  border: 1px solid black;
+}
+.gambar.kecil {
+  width: 50px;
+}
