@@ -1,9 +1,10 @@
  body {
-            background-image: url("/images/background-dot.png");
-            background-repeat: repeat;
+  background-image: url("/images/background-dot.png");
+  background-repeat: repeat;
       }
-
-      
+h1 {
+color :#2fb9b9;
+}
 p {
   color: #F2BAC9;
 }
