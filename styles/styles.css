@@ -4,13 +4,19 @@ body {
 }
 
 h1 {
- color :#2fb9b9;
+ color :#f3c01a;
 }
 
 h2 {
  color :#2fb9b9;
 }
-p {
-  text-align: center;
+
+p{
+ text-align:center;
+}
+#para1 {
   color: #F2BAC9;
+}
+#logo_kucing {
+ width:200px;
 }
