@@ -1,3 +1,7 @@
+ body {
+            background-image: url("/images/background-dot.png");
+            background-repeat: repeat;
+         }
 p {
   color: #F2BAC9;
 }
