@@ -3,15 +3,17 @@
   background-repeat: repeat;
       }
 h1 {
-color :#2fb9b9;
+  color :#2fb9b9;
 }
 p {
+  text-align: center;
   color: #F2BAC9;
 }
 
 img {
-  width: 100px;
+  width: 200px;
 }
+
 #logo {
   background-color: white;
 }
