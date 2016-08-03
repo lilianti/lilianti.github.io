@@ -1,6 +1,7 @@
 body {
  background-image: url("/images/background-dot.png");
  background-repeat: repeat;
+ font-family:"Verdana, Geneva, sans-serif";
 }
 
 h1 {
