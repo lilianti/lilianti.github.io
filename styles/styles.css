@@ -28,17 +28,30 @@ p{
  text-align:center;
  color:#555555;
 }
+
 .center{
   text-align:center;
   float:center;
 }
 
-.div-table-data{
-     float:left;
-     border: 3px solid #73AD21; 
-     padding: 10px 10px 10px 10px; 
-}
+   .divTable
+    {
+        display:  table;
+        width:auto;
+    }
 
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .divCell
+    {
+        float:left;
+        display:table-column;
+    }
+<
 #para1 {
   color: #F2BAC9;
 }
