@@ -4,23 +4,27 @@ body {
 }
 
 * {
- font-family:"Verdana", Geneva, sans-serif;
+font-family:"Avant Garde", Geneva, sans-serif;
 }
+
+
 h1 {
  color :#f3c01a;
 }
+
 h1:hover {
   font-size: 40px;
 }
 
 h2 {
   color :#2fb9b9;
-  font-family:"Verdana",Geneva, sans-serif;
+  font-family:"Edwardian Script ITC";
+  font-size:40px;
 }
 
 p{
  text-align:center;
- color:#777777;
+ color:#555555;
 }
 .center{
   text-align:center;
@@ -33,14 +37,14 @@ p{
   width:150px;
   padding 30px 30px;
 }
+#logo_kucing.hover{
+  width:300px
+}
 
 #welcome {
 }
 
 #form-message {
-   width: 50%; 
-   margin-left: auto;
-   margin-right: auto
-
-
+   width: 50%;
+   margin: auto;
 }
