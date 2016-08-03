@@ -30,7 +30,7 @@ p{
 
 .center{
  text-align:center;
- float:center;
+  margin:auto;  
 }
 
 .divTable
@@ -49,10 +49,6 @@ p{
 {
  float:left;
  display:table-column;
-}
-
-#para1 {
-color: #F2BAC9;
 }
 
 #logo_kucing {
