@@ -1,5 +1,5 @@
 body {
- background-image: url("/images/background-dot.png");
+ background-image: url("http://lilianti.github.io/images/background-dot.png");
  background-repeat: repeat;
 }
 
@@ -14,7 +14,8 @@ h1:hover {
 }
 
 h2 {
- color :#2fb9b9;
+  color :#2fb9b9;
+  font-family:"Verdana",Geneva, sans-serif;
 }
 
 p{
@@ -22,7 +23,7 @@ p{
  color:#777777;
 }
 .center{
- align-content: center;
+  text-align:center;
 }
 
 #para1 {
@@ -34,4 +35,9 @@ p{
 }
 
 #welcome {
+}
+
+#form-message {
+   width: 50%; 
+
 }
