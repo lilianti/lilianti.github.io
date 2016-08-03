@@ -30,10 +30,13 @@ p{
 }
 .center{
   text-align:center;
+  float:center;
 }
 
 .div-table-data{
-     float: left; 
+     float:left;
+     border: 3px solid #73AD21; 
+     padding: 10px 10px 10px 10px; 
 }
 
 #para1 {
@@ -41,7 +44,6 @@ p{
 }
 #logo_kucing {
   width:150px;
-  padding 30px 30px;
    transition: all 1s;
 
 }
