@@ -10,6 +10,8 @@ font-family:"Avant Garde", Geneva, sans-serif;
 
 h1 {
  color :#f3c01a;
+ transition: all 1s;
+
 }
 
 h1:hover {
@@ -19,7 +21,7 @@ h1:hover {
 h2 {
   color :#2fb9b9;
   font-family:"Edwardian Script ITC";
-  font-size:40px;
+  font-size:50px;
 }
 
 p{
@@ -30,15 +32,22 @@ p{
   text-align:center;
 }
 
+.div-table-data{
+     float: left; 
+}
+
 #para1 {
   color: #F2BAC9;
 }
 #logo_kucing {
   width:150px;
   padding 30px 30px;
+   transition: all 1s;
+
 }
-#logo_kucing.hover{
-  width:300px
+
+#logo_kucing:hover {
+  transform: rotate(-360deg);
 }
 
 #welcome {
