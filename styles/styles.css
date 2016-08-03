@@ -3,28 +3,28 @@ body {
  background-repeat: repeat;
 }
 
+* {
+ font-family:"Verdana", Geneva, sans-serif;
+}
 h1 {
  color :#f3c01a;
- font-family:"Verdana, Geneva, sans-serif";
 }
 
 h2 {
  color :#2fb9b9;
- font-family:"Verdana, Geneva, sans-serif";
 }
 
 p{
  text-align:center;
- font-family:"Verdana", Geneva, sans-serif;
 }
+
 #para1 {
   color: #F2BAC9;
 }
 #logo_kucing {
- width:150px;
- padding 30px 30px;
+  width:150px;
+  padding 30px 30px;
 }
 
 #welcome {
- align: center; 
 }
