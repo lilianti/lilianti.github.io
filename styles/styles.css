@@ -1,26 +1,16 @@
- body {
-  background-image: url("/images/background-dot.png");
-  background-repeat: repeat;
-      }
+body {
+ background-image: url("/images/background-dot.png");
+ background-repeat: repeat;
+}
+
 h1 {
-  color :#2fb9b9;
+ color :#2fb9b9;
+}
+
+h2 {
+ color :#2fb9b9;
 }
 p {
   text-align: center;
   color: #F2BAC9;
 }
-
-img {
-  width: 200px;
-}
-
-#logo {
-  background-color: white;
-}
-.gambar {
-  border: 1px solid black;
-}
-.gambar.kecil {
-  width: 50px;
-}
-
