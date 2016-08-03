@@ -38,11 +38,11 @@
       </p>
     </div>
     <div id="form-message" class="center">
-      <form>
+      <form id="msg-form">
         <fieldset>
           <legend>Leave me a message here:</legend>
           <p>
-           <label for="full-name">Full Name</label>
+            <label for="full-name">Full Name</label>
             <input name="full-name" type="text">
           </p>
           <p>
@@ -51,8 +51,10 @@
           </p>
           <p>
             <label for="message">Message</label>
-            <input name="message" type="text">
-          </p><br /><br />
+            <input name="message" type="textarea">
+            <textarea rows="4" cols="50" name="comment" form="msg-form">
+          </p>
+          <br /><br />
           <input type="submit" value="Submit">
         </fieldset>
       </form>
