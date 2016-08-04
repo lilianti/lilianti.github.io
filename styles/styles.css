@@ -52,10 +52,24 @@ p{
  display:table-column;
 }
 
+ul li {
+	padding-left:8px;
+	list-style:none;
+	margin-bottom:6px;
+	text-align: center;
+	text-indent: -12px;
+	}
+		
+li:before{
+	padding-right: 4px;
+	content: url("../images/mod-bullet-green.png");
+ }
+
+
 #logo_kucing {
  width:150px;
  transition: all 1s;
-}
+ }
 
 #logo_kucing:hover {
  transform: rotate(-360deg);
