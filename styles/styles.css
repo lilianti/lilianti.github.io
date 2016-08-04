@@ -29,8 +29,9 @@ p{
 }
 
 .center{
+ display: inline-block;
  text-align:center;
-  margin:auto;  
+ margin:auto;  
 }
 
 .divTable
