@@ -1,70 +1,122 @@
 body {
- background-image: url("http://lilianti.github.io/images/background-dot.png");
- background-repeat: repeat;
+  background-color : #ffffff;
+  font-family: "arial", sans-serif;
+  color: #636363;
+  margin:auto;
+  max-width: 960px;
 }
+
+.slider{
+  background-image: url("https://lilianti.github.io/images/purple-cloud.png");
+  color : white; 
+  font-size: 3em;
+  padding: 70px 0 70px 40px;
+}
+
+footer{
+  clear: left;
+}
+
+#logo{
+  width: 25%;
+}
+
+
+@import "compass/css3";
 
 * {
-font-family:"Avant Garde", Geneva, sans-serif;
+  @include box-sizing(border-box);
 }
 
+$pad: 20px;
 
-h1 {
- color :#f3c01a;
- transition: all 1s;
+.grid {
+  background: grey;
+  margin: 0 0 $pad 0;
+  border: 1px solid green;
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
-h1:hover {
- font-size: 40px;
+[class*='col-'] {
+	float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: 0;
+  }
 }
 
-h2 {
- color :#2fb9b9;
- font-family:"Edwardian Script ITC";
- font-size:50px;
+.col-2-3 { width: 66.66%; }
+.col-1-3 { width: 33.33%; }
+.col-1-2 { width: 50%; }
+.col-1-4 { width: 25%; }
+.col-1-8 { width: 12.5%; }
+
+.module {
+  
 }
 
-p{
- text-align:center;
- color:#555555;
+li {  
+  list-style:none;  
 }
 
-.center{
- text-align:center;
- margin:auto;  
- list-style:none;
+a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.divTable
-{
-  display:  table;
-  width:auto;
+.box-kecil {
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 165px;
+  font-size: 1.5em;
+  font-align: center;
+  color: white;
+  padding: 30px 0 30px 10px; 
+  display: inline-block;
+  
+  > a {
+    
+  }
 }
 
-.divRow
-{
- display:table-row;
- width:auto;
+[class*='box-']{
+  margin-left: auto;
+}
+.box1 {background-color: #ffb5bf;}
+.box2 {background-color: #826f83;}
+.box3 {background-color: #d0afc0;}
+.box4 {background-color: #f2e3c4;}
+.box5 {background-color: #bed28d;}
+.box6 {background-color: #f1d396;}
+
+[class*="box-"]:hover{ background-color: grey;}
+
+
+
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
 }
 
-.divCell
-{
- float:left;
- display:table-column;
+.about-me { 
+  margin: 20px;
+  clear: left;
+  background-image: url("https://lilianti.github.io/images/succulent01.png");
+  width: 280px; 
+  height: 50px;
+  padding: 70px 0;
+  font-size: 2.5em;
 }
-
-ul li {
-	padding-left:8px;
-	list-style:none;
-	margin-bottom:6px;
-	text-align: center;
-	text-indent: -12px;
-	}
-		
-li:before{
-	padding-right: 4px;
-	content: url("../images/cat-bullet.png");
- }
-
 
 #logo_kucing {
  width:150px;
@@ -75,7 +127,21 @@ li:before{
  transform: rotate(-360deg);
 }
 
-#form-message {
- width: 50%;
- margin: auto;
+.form-center {
+  text-align:center;
+  margin:auto;  
+  list-style:none;
+  padding: 20px;
+}
+
+.mystoy {
+}
+
+.bulat{
+  width: 150px;
+  padding: 20px;
+}
+
+.bulan:hover{
+  
 }
