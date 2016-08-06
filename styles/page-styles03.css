@@ -1,0 +1,98 @@
+body {
+  background-color : #ffffff;
+  font-family: "arial";
+  color: #636363;
+  margin:auto;
+  max-width: 960px;
+}
+
+header {
+  border: 1px solid tomato;
+}
+
+h1 {color: tomato;}
+h3 {color: #238b8b;}
+
+
+.page-title{
+  background-image: url("https://lilianti.github.io/images/purple-cloud.png");
+  color : #ffffff;
+  font-size: 3em;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #7eb300;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#logo_kucing {
+ width:150px;
+ transition: all 1s;
+ }
+
+#logo_kucing:hover {
+ transform: rotate(-360deg);
+}
+
+aside{
+  border: 1px solid tomato;
+}
+
+aside a { color: #7b5267; }
+
+aside a:hover{ color: #7eb300;}
+
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.footer {
+  background: #ffffff;
+}
+
+.main {
+  text-align: left;
+  background: white;
+  border: 1px solid deepskyblue;
+  padding: 0px 20px 0;
+}
+
+.aside-1{
+  background: #f2e3c4;
+}
+
+.aside-1 li{
+  list-style:none;  
+  padding: 20px
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside   { flex: 1 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 3; }
+}
+
+
