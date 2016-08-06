@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  border: 1px solid tomato;
+  border: 0px solid tomato;
 }
 
 h1 {color: tomato;}
@@ -40,7 +40,7 @@ a:hover {
 }
 
 aside{
-  border: 1px solid tomato;
+  border: 0px solid tomato;
 }
 
 aside a { color: #7b5267; }
@@ -70,7 +70,7 @@ aside a:hover{ color: #7eb300;}
 .main {
   text-align: left;
   background: white;
-  border: 1px solid deepskyblue;
+  border: 0px solid deepskyblue;
   padding: 0px 20px 0;
 }
 
