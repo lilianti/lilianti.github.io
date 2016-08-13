@@ -1,7 +1,7 @@
-function pangkatAngka(a, b) {
-  
-  for (i = 1; i < b; i++) { 
-    a = a * a;
+  function pangkatAngka(a, b) {
+  var hasil = 1;
+  for (i = 0; i < b; i++) { 
+    hasil = hasil * a;
 }
-  return a;
+ 	return hasil;
 }
