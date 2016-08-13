@@ -1,4 +1,7 @@
-function pangkatAngka(a,b)
-{
-  return pangkatAngka = a * b;
+function pangkatAngka(a, b) {
+  
+  for (i = 0; i < b; i++) { 
+    a = a * b;
+}
+  return a;
 }
