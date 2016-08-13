@@ -5,3 +5,18 @@
 }
  	return hasil;
 }
+
+	function akarKuadrat(a) {
+    var hasil = 0; 
+    var counter = 0;
+    while (hasil != a && hasil < a){
+      counter++;
+      hasil = counter * counter;
+    }
+    if (hasil == a) {
+      hasil = counter;}
+    else {
+    	hasil = "Bukan Bilangan Kuadrat";    
+    }
+      return hasil;
+  }
