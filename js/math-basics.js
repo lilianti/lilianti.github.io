@@ -1,24 +1,10 @@
   function pangkatAngka(a, b) {
-  var hasil = 1;
-  for (i = 0; i < b; i++) { 
-    hasil = hasil * a;
-}
-  return hasil;
+  
+  return Math.pow(a,b);
 }
 
   function akarKuadrat(a) {
-    var hasil = 0; 
-    var counter = 0;
-    while (hasil != a && hasil < a){
-      counter++;
-      hasil = counter * counter;
-    }
-    if (hasil == a) {
-      hasil = counter;}
-    else {
-      hasil = "Bukan Bilangan Kuadrat";    
-    }
-      return hasil;
+     return Math.sqrt(a);
   }
   
   function hipotenusa (a,b){
@@ -28,3 +14,8 @@
   function luasLingkaran(r){  
     return Math.round(Math.PI * pangkatAngka(r,2));
   }
+
+  document.write(pangkatAngka(2,3));
+  document.write(akarKuadrat(9));
+  document.write(hipotenusa(3,4));
+  document.write(luasLingkaran(7));
