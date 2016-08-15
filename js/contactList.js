@@ -1,5 +1,3 @@
-<script>
-  
   var daftarKontak = new Array();
   var contact = {
     nama : "",
@@ -59,4 +57,3 @@
  
   }
   
-</script>
