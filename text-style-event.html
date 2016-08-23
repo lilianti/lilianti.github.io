@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<center>
+		<h1>Text Style Event</h1>
+		<span id="myText" style="font-size:24px">Klik tulisan ini supaya berubah</span>
+	</center>
+
+
+	<script type="text/javascript">
+		function makeBold(){
+			this.style.color = "#fe4b97";
+			this.style.fontWeight = "bold";
+			this.style.fontStyle = "normal";
+		}
+
+		function makeItalic(){
+			this.style.color = "#78ba23";
+			this.style.fontStyle = "italic";
+			this.style.fontWeight ="normal";
+		}
+
+		var elem = document.getElementById("myText");
+
+		elem.addEventListener("click", makeBold);
+		elem.addEventListener("contextmenu", makeItalic);
+
+	</script>
+</body>
+</html>

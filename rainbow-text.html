@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+	<center>
+	<h1>Rainbow Text</h1>
+	<button id="buttonWarna">Ubah Warna</button>
+	<br><br>
+
+	<span id="text1">Halo, </span>
+	<span id="text2">apa</span>
+	<span id="text3">kabar?</span>
+
+	</center>
+	<script type="text/javascript">
+		function changeColor(){
+			document.getElementById('text1').style.color = "#8470FF";
+			document.getElementById("text2").style.color = "#78ba23"; 
+			document.getElementById("text3").style.color = "#f751c2"; 
+
+		}
+
+		var elem = document.getElementById("buttonWarna");
+
+		elem.addEventListener("click",changeColor, false)
+
+	</script>
+</body>
+</html>
