@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery Slides</title>
+</head>
+<body>
+	<center>
+		<h1>Gallery Slides</h1>
+		<button id="prevButton">Prev</button>
+		<img id="showSlides" src = "" height="200px">
+		<button id="nextButton">Next</button>
+		<p id="slideAlert"></p>
+	</center>
+
+	<script type="text/javascript">
+		var imageRoot = "https://lilianti.github.io/images/";
+		var mySlides = ["img1.jpg","img2.jpg","img3.jpg"];
+		var currSlideIndex = 0;
+		var prevButton = document.getElementById("prevButton");
+		var nextButton = document.getElementById("nextButton");
+
+		prevButton.addEventListener("click", prevSlide, false);
+		nextButton.addEventListener("click", nextSlide, false);
+
+
+		function nextSlide(){
+			if (currSlideIndex == mySlides.length-1) {
+				document.getElementById("slideAlert").innerHTML = "Last Slide";
+			} else {
+				currSlideIndex += 1;
+				showCurrSlide();
+			document.getElementById("slideAlert").innerHTML = "Slide #" + (currSlideIndex + 1);			
+			}
+		
+
+		}
+
+		function prevSlide(){
+			
+			if (currSlideIndex == 0) {
+				document.getElementById("slideAlert").innerHTML = "First Slide";
+			} else {
+				currSlideIndex -=1;
+				showCurrSlide();
+			document.getElementById("slideAlert").innerHTML = "Slide #" + (currSlideIndex+1);			
+			}
+
+		}
+
+		function showCurrSlide(){
+			var elem = document.getElementById("showSlides");
+			elem.src = imageRoot + mySlides[currSlideIndex];
+			console.log("Slide Index : " + currSlideIndex);
+			console.log("Slide Length : " + mySlides.length);
+		}
+
+		showCurrSlide();
+
+
+	</script>
+</body>
+</html>

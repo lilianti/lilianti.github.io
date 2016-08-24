@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tebak Angka</title>
+</head>
+<body>
+	<center>
+		<h1 style="color:#75BC62">Tebak Angka</h1>
+		<br>
+		<p >Guess A Number (1-10)</p>
+		<p id=chance>You have 5 chances</p>
+		<input id="yourNumber" type="tex" value="0">
+		<button id="buttonGuess">Guess!</button>
+		<p id="result" style="color:#FF6B6B; font-size:24px"></p>
+		<p id="myNumber"></p>
+		<p id="testRandom"></p>
+	</center>
+
+	<script type="text/javascript">
+		var counter = 5;
+		var myNumber = Math.round(Math.random() * 10);
+		var buttonGuess = document.getElementById("buttonGuess");
+		var guessNumber = 0;
+
+		function showChances(argument) {
+	 		document.getElementById("chance").innerHTML = "You have " + counter + " chance(s).";
+		}
+
+		function startGame(){
+		 	counter = 5;
+		 	myNumber = Math.round(Math.random() * 10);
+		 	showChances();
+		}
+
+		 function guessing(){
+		 	console.log("Angka Random : " + myNumber);
+			guessNumber = document.getElementById("yourNumber").value;
+	 		if (counter > 1){
+		 		if (guessNumber == myNumber) {
+		 			showResult();
+		 		} else {
+		 			document.getElementById("result").innerHTML = "Wrong! Try Again!";
+		 			counter	-= 1;
+		 			showChances();
+		 		}
+
+		 	} else {
+		 		document.getElementById("result").innerHTML = "Wrong! Let's start again!";
+		 		startGame();
+		 	}
+
+		 }
+
+		 function showResult(){
+				if (myNumber == guessNumber){
+		 		document.getElementById("result").innerHTML = "You win! Let's play again! ";
+		 		document.getElementById("myNumber").innerHTML = "My random number is " + myNumber;
+		 		startGame();
+				} else {
+					document.getElementById("result").innerHTML = "You loose!";
+				}
+
+		 }
+
+		 buttonGuess.addEventListener("click", guessing);
+		 startGame();
+
+	</script>
+
+</body>
+</html>
